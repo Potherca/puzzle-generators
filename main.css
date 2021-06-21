@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*outline: 1px solid rgba(100%,100%,0%, 0.35);*/
+    /*background:  rgba(100%,100%,0%, 0.085);*/
+}
+
+body, html {
+    background: #EFFEEF;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
+button {
+    background: white;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+    display: block;
+    margin: 0.35em;
+    padding: 0.35em;
+}
+
+button:hover,
+label:hover {
+    background: #ddd;
+}
+
+button, input, label {
+    border-radius: 0.35em;
+    font-size: 100%;
+    font-family: sans-serif;
+}
+
+div {
+    background: #FFF;
+    height: 50vmin;
+    width: 50vmin;
+}
+
+form {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0.85em;
+}
+
+h1 {
+    color: #666;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+}
+
+h1 span {
+    color: #999;
+}
+
+input {
+    border: 1px solid #dddddd;
+    margin-left: 0.35em;
+    padding: 0.35em 0;
+    text-align: right;
+    width: 6em;
+}
+
+input[name="size"] {
+    width: 2.5em;
+}
+
+label {
+    align-items: center;
+    background: #eee;
+    display: flex;
+    margin: 0.35em;
+    padding: 0 0 0 0.35em;
+    white-space: nowrap;
+}
+
+main {
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin: 0;
+    min-height: 100%;
+    padding: 0;
+}
+
+.difficulty {
+    /*background: none;*/
+    /*border: none;*/
+    width: 2em;
+    margin: 0 0.85em 0 0.35em;
+    text-align: right;
+}
+
+@media print {
+    div {
+        position: fixed;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 100vmin;
+    }
+
+    footer, header span, form {
+        display: none;
+    }
+}
