@@ -9,6 +9,6 @@
   "lang": "en-GB",
   "name": "Takuzu Puzzle Generator",
   "short_name": "Takuzu Generator",
-  "start_url": "/",
+  "start_url": "/puzzle-generators/",
   "theme_color": "#EFFEEF"
 }
