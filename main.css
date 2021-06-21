@@ -56,7 +56,7 @@ h1 {
 }
 
 h1 span {
-    color: #999;
+    color: #8f8f8f;
 }
 
 input {
@@ -107,6 +107,9 @@ main {
     text-align: right;
 }
 
+.potherca {
+    color: #a22523; /* Slightly darker, to improve contrast level */
+}
 @media print {
     div {
         position: fixed;
