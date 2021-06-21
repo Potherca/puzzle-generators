@@ -10,3 +10,9 @@ jobs:
           node-version: 12.x
       - run: npm install -g @lhci/cli@0.8.x
       - run: lhci autorun --collect.staticDistDir=${PWD}
+      - uses: actions/upload-artifact@v2
+        if: failure()
+        with:
+          name: Lighthouse Report
+          path: .lighthouseci
+
