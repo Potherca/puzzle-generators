@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Takuzu Puzzle Generator</title>
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="apple-touch-icon" href="./logo.png">
+  <link rel="icon" href="./logo.svg" type="image/xml+svg" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" />
+  <link rel="preload" as="style" href="./main.css" />
+
+  <link rel="preload" href="./main.js" as="script" />
+  <link rel="preload" href="./generic/base-generator.js" as="script" />
+  <link rel="preload" href="./generic/enums.js" as="script" />
+  <link rel="preload" href="./takuzu/generator.js" as="script" />
+  <link rel="preload" href="./takuzu/takuzu-board-generator.js" as="script" />
+
+  <meta content="ie=edge" http-equiv="X-UA-Compatible">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="description" content="Generate Takuzu Puzzles!" />
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="msapplication-starturl" content="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#EFFEEF">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <link href="main.css" rel="stylesheet">
+</head>
+<body>
+<header>
+  <h1>Takuzu Puzzle <span>Generator</span></h1>
+</header>
+
+<main>
+  <form>
+    <button type="reset">Reset</button>
+    <label>Id<input data-js="set-id" type="number" min="0" max="16777216" name="id" /></label>
+    <label>Size<input data-js="set-size" type="number" min="2" max="20" name="size" /></label>
+    <label>Difficulty
+      <input data-js="set-difficulty" type="range" min="0" max="100" step="1" name="difficulty" />
+      <span class="difficulty" data-js="difficulty"></span>
+    </label>
+    <button type="submit">Generate</button>
+  </form>
+</main>
+
+<footer class="created-by">
+  <p>
+    Source of this page is available on <a href="https://github.com/potherca/picker">Github</a> under a <a rel="license"
+      href="https://spdx.org/licenses/GPL-3.0.html"
+  >GPL-3.0+ License</a> &mdash; Created by <a href="http://pother.ca/" class="potherca">Potherca</a>
+  </p>
+  <!-- @TODO: Add "created by", etc. footer -->
+</footer>
+
+<script src="takuzu/takuzu-board-generator.js"></script>
+<script type="module" src="./takuzu/generator.js"></script>
+<script type="module" src="./main.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('service-worker.js', {scope: './'})
+  }
+</script>
+</body>
+</html>
