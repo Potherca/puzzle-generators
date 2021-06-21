@@ -1,0 +1,13 @@
+{
+  "ci": {
+    "assert": {
+      "preset": "lighthouse:recommended",
+      "assertions": {
+        "csp-xss": "off",
+        "font-size": "off",
+        "unminified-javascript": "off",
+        "uses-long-cache-ttl": "off"
+      }
+    }
+  }
+}
