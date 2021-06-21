@@ -1,5 +1,7 @@
 {
+  "author": "Potherca",
   "background_color": "#EFFEEF",
+  "categories": ["entertainment", "games", "utilities"],
   "description": "Generate takuzu puzzles!",
   "display": "standalone",
   "icons": [
@@ -7,8 +9,27 @@
     {"sizes": "1024x1024", "src": "logo.svg", "type": "image/svg+xml"}
   ],
   "lang": "en-GB",
+  "license": "MPL-2.0",
+  "manifestUrl": "manifest.json",
   "name": "Takuzu Puzzle Generator",
+  "orientation": "any",
+  "scope": "",
+  "screenshots": [
+    {
+      "platform": "wide",
+      "sizes": "1280x800",
+      "src": "screenshot-wide.png",
+      "type": "image/png"
+    },
+    {
+      "platform": "narrow",
+      "src": "screenshot-narrow.png",
+      "sizes": "750x1334",
+      "type": "image/png"
+    }
+  ],
   "short_name": "Takuzu Generator",
-  "start_url": "/puzzle-generators/",
-  "theme_color": "#EFFEEF"
+  "start_url": "/",
+  "theme_color": "#EFFEEF",
+  "url": "https://pother.ca/puzzle-generators/"
 }
