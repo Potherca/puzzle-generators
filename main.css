@@ -5,6 +5,10 @@
     /*background:  rgba(100%,100%,0%, 0.085);*/
 }
 
+a {
+    text-decoration: none;
+}
+
 body, html {
     background: #EFFEEF;
     font-family: 'Roboto', sans-serif;
@@ -67,6 +71,12 @@ input[name="size"] {
     width: 2.5em;
 }
 
+footer p {
+    font-size: 2vmin;
+    padding: 1em;
+    text-align: right;
+}
+
 label {
     align-items: center;
     background: #eee;
@@ -84,7 +94,8 @@ main {
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 0;
-    min-height: 100%;
+    max-height: 100%;
+    min-height: 85%;
     padding: 0;
 }
 
