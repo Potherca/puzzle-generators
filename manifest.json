@@ -3,8 +3,8 @@
   "description": "Generate takuzu puzzles!",
   "display": "standalone",
   "icons": [
-    {"sizes": "1024x1024", "src": "logo.png", "type": "image/png"},
-    {"purpose": "maskable", "sizes": "1024x1024", "src": "logo.svg", "type": "image/svg+xml"}
+    {"purpose": "maskable", "sizes": "1024x1024", "src": "logo.png", "type": "image/png"},
+    {"sizes": "1024x1024", "src": "logo.svg", "type": "image/svg+xml"}
   ],
   "lang": "en-GB",
   "name": "Takuzu Puzzle Generator",
