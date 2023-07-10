@@ -1,88 +1,105 @@
-The following games might be of interest to add, if a generator exist for them:  
+# Paper and pencil logic puzzles
 
-| Status | Game                    | Generator                         |
-| ------ | ----------------------- | --------------------------------- |
-|        | [Atsumari]              |                                   |
-|        | [Battleship]            |                                   |
-|        | [Boggle]                |                                   |
-|        | [Buchstabensalat]       |                                   |
-|        | [Connect_the_dots]      |                                   |
-|        | [Cross-figure]          |                                   |
-|        | [Crossword]             |                                   |
-|        | [Fill-In]               |                                   |
-|        | [Fillomino]             |                                   |
-|        | [Futoshiki]             |                                   |
-|        | [Gokigen_Naname]        |                                   |
-|        | [Hashiwokakero]         |                                   |
-|        | [Heyawake]              |                                   |
-|        | [Hidato]                |                                   |
-|        | [Hitori]                |                                   |
-|        | [Hotaru_Beam]           |                                   |
-|        | [Inshi_no_heya]         |                                   |
-|        | [Join_Five]             |                                   |
-|        | [Kakuro]                |                                   |
-|        | [Keisuke]               |                                   |
-|        | [KenKen]                |                                   |
-|        | [Kuromasu]              |                                   |
-|        | [Light_Up]              |                                   |
-|        | [LITS]                  |                                   |
-|        | [Logic_maze]            |                                   |
-|        | [Mainarizumu]           |                                   |
-|        | [Masyu]                 |                                   |
-|        | [Maze]                  |                                   |
-|        | [Minesweeper]           |                                   |
-|        | [Nonogram]              |                                   |
-|        | [Numberlink]            |                                   |
-|        | [Nurikabe]              |                                   |
-|        | [Picture_maze]          |                                   |
-|        | [Ripple_Effect]         |                                   |
-|        | [Shakashaka]            |                                   |
-|        | [Shikaku]               |                                   |
-|        | [Shinro]                |                                   |
-|        | [Slitherlink]           |                                   |
-|        | [Spot_the_difference]   |                                   |
-|        | [Stained_Glass]         |                                   |
-|        | [Str8ts]                |                                   |
-|        | [Sudoku]                |                                   |
-|        | [Sujiko]                |                                   |
-|        | [Survo_puzzle]          |                                   |
-|      ✅ | [Takuzu]                | [jplanson/takuzu-board-generator] |
-|        | [Tatamibari]            |                                   |
-|        | [Word_search]           |                                   |
-|        | [Yajilin]               |                                   |
-|        | [Yajisan-Kazusan]       |                                   |
+This document contains a list of the different (paper and pencil) logic puzzles that I could find.
 
-<!--
-    http://www.cross-plus-a.com/puzzles.htm
-    http://translate.google.com/translate?u=https%3A//www.janko.at/Raetsel/Nikoli/index.htm&sl=auto&tl=en&amp;ie=UTF-8
-    http://zenseeker.net/BoardGames/PaperPenGames.htm
--->
+If an implementation exists to generate specific puzzle types, they could be added as generator.
+Ideally written in JavaScript, or a language that can be compiled to WASM.
+Worst case scenario, the generator will need to be ported to JavaScript.
+
+##  The List
+
+| Puzzle                | Example Image                                                                                                  |    Year    |    [ZKP]     | Also know as...                                                                                                         |
+|-----------------------|----------------------------------------------------------------------------------------------------------------|:----------:|:------------:|-------------------------------------------------------------------------------------------------------------------------|
+| [Atsumari]            | ![](https://upload.wikimedia.org/wikipedia/commons/3/38/Atsumari_puzzle.svg)                                   |            |              |                                                                                                                         |
+| [Battleship]          | ![](https://upload.wikimedia.org/wikipedia/commons/4/4d/Solved_Solitaire_Battleships.svg)                      |            |              |                                                                                                                         |
+| [Boggle]              | ![](https://upload.wikimedia.org/wikipedia/commons/1/13/Boggle_2.svg)                                          |            |              |                                                                                                                         |
+| [Connect the dots]    | ![](https://upload.wikimedia.org/wikipedia/commons/7/7b/Dot-to-dot_pigeon_worksheet.svg)                       |            |              |                                                                                                                         |
+| [Cross-figure]        | ![](https://upload.wikimedia.org/wikipedia/commons/8/8a/Cross-figure_puzzle.svg)                               |            |              |                                                                                                                         |
+| [Crossword]           | ![](https://upload.wikimedia.org/wikipedia/commons/1/14/CrosswordUSA.svg)                                      |            |              |                                                                                                                         |
+| [Fill-In]             | ![](https://upload.wikimedia.org/wikipedia/commons/c/ce/Sample_7x7_Fill-In_Starter_Grid.png)                   |            |              |                                                                                                                         |
+| [Fillomino]           | ![](https://upload.wikimedia.org/wikipedia/commons/1/15/Polyominous.png)                                       |            |              |                                                                                                                         |
+| [Futoshiki]           | ![](https://upload.wikimedia.org/wikipedia/commons/6/61/Futoshiki1.svg)                                        |            |              |                                                                                                                         |
+| [Gokigen Naname]      | ![](https://upload.wikimedia.org/wikipedia/commons/d/d7/Gokigen_solved.svg)                                    |            |              |                                                                                                                         |
+| [Hashiwokakero]       | ![](https://upload.wikimedia.org/wikipedia/commons/4/48/HashiwokakeroBeispiel_ohne_Rahmen.svg)                 |            |              |                                                                                                                         |
+| [Heyawake]            | ![](https://upload.wikimedia.org/wikipedia/commons/d/db/RoomReason.svg)                                        |            |              |                                                                                                                         |
+| [Hidato]              | ![](https://upload.wikimedia.org/wikipedia/commons/f/ff/Hidato-Puzzle.svg)                                     |            |              |                                                                                                                         |
+| [Hitori]              | ![](https://upload.wikimedia.org/wikipedia/commons/2/2a/Hitori.svg)                                            |            |              |                                                                                                                         |
+| [Hotaru Beam]         | ![](https://upload.wikimedia.org/wikipedia/commons/f/f7/Unsolved_Hotaru_Beam_grid.png)                         |            |              |                                                                                                                         |
+| [Inshi no heya]       | ![](https://upload.wikimedia.org/wikipedia/commons/2/29/Unsolved_Inshi_No_Heya_grid.png)                       |            |              |                                                                                                                         |
+| [Join Five]           | ![](https://upload.wikimedia.org/wikipedia/commons/c/cc/Join_five_1.png)                                       |            |              |                                                                                                                         |
+| [Kakuro]              | ![](https://upload.wikimedia.org/wikipedia/commons/c/c8/Kakuro_black_box.svg)                                  | [1950][y5] | [👁️🗨️][z2] | Cross Addition, Cross Sums, Kakkuro, Kakoro, Kakro                                                                      |
+| [Keisuke]             | ![](https://upload.wikimedia.org/wikipedia/commons/8/8f/Unsolved_Keisuke_Puzzle_grid.png)                      |            |              |                                                                                                                         |
+| [KenKen]              | ![](https://upload.wikimedia.org/wikipedia/commons/f/fd/KenKenProblem.svg)                                     | [2004][y3] | [👁️🗨️][z2] | CalcuDoku, Caldoku, Inkies, Ken Ken,  KenDoku, Mathdoku MinuPlu, Solingo, Square Wisdom, Sukendo                        |
+| [Kuromasu]            | ![](https://upload.wikimedia.org/wikipedia/commons/9/97/Kuromasu-example.svg)                                  |            |              |                                                                                                                         |
+| [Light Up]            | ![](https://upload.wikimedia.org/wikipedia/commons/e/ee/Lightup.svg)                                           | [2001][y4] | [👁️🗨️][z2] | Akari, Bulbs, Lightbulbs                                                                                                |
+| [LITS]                | ![](https://upload.wikimedia.org/wikipedia/commons/7/73/LITS.png)                                              |            |              | Nuruomino                                                                                                               |
+| [Logic maze]          | ![](https://upload.wikimedia.org/wikipedia/commons/c/c6/Theseus_and_the_Minotaur_puzzle.png)                   |            |              |                                                                                                                         |
+| [Mainarizumu]         | ![](https://upload.wikimedia.org/wikipedia/en/4/4a/Mainarizumu.png)                                            |            |              |                                                                                                                         |
+| [Masyu]               | ![](https://upload.wikimedia.org/wikipedia/commons/3/3f/Masyu_puzzle.svg)                                      |            |              |                                                                                                                         |
+| [Maze]                | ![](https://upload.wikimedia.org/wikipedia/commons/8/88/Maze_simple.svg)                                       |            |              |                                                                                                                         |
+| [Minesweeper]         | ![](https://i.redd.it/vnozaon6v5061.png)                                                                       |            |              |                                                                                                                         |
+| [Nonogram]            | ![](https://upload.wikimedia.org/wikipedia/commons/9/9f/Nonogram_wiki.svg)                                     |            |              |                                                                                                                         |
+| [Numberlink]          | ![](https://upload.wikimedia.org/wikipedia/commons/b/b3/Numberlink_puzzle.svg)                                 |            |              |                                                                                                                         |
+| [Nurikabe]            | ![](https://upload.wikimedia.org/wikipedia/commons/3/31/Nurikabe_example1.png)                                 |            |              |                                                                                                                         |
+| [Picture maze]        | ![](https://upload.wikimedia.org/wikipedia/commons/c/c9/Picture_maze_unsolved.png)                             |            |              |                                                                                                                         |
+| [Ripple Effect]       | ![](https://upload.wikimedia.org/wikipedia/en/3/39/RippleEffect.png)                                           |            |              |                                                                                                                         |
+| [Shakashaka]          | ![](https://upload.wikimedia.org/wikipedia/commons/8/84/Shakashaka_Puzzle.svg)                                 |            |              |                                                                                                                         |
+| [Shikaku]             | ![](https://upload.wikimedia.org/wikipedia/commons/5/58/Shikaku_start.png)                                     |            |              |                                                                                                                         |
+| [Shinro]              | ![](https://upload.wikimedia.org/wikipedia/commons/6/6f/Shinro_start.svg)                                      |            |              |                                                                                                                         |
+| [Slitherlink]         | ![](https://upload.wikimedia.org/wikipedia/commons/b/b6/Slitherlink-example.png)                               |            |              |                                                                                                                         |
+| [Spot the difference] | ![](https://www.lambiek.net/artists/image/k/klaassen_bertus/klaassen_10verschillen.jpg)                        |            |              |                                                                                                                         |
+| [Stained Glass]       | ![](https://upload.wikimedia.org/wikipedia/commons/1/1b/Stained_Glass_puzzle.png)                              |            |              |                                                                                                                         |
+| [Str8ts]              | ![](https://upload.wikimedia.org/wikipedia/commons/9/9e/Str8ts9x9_Gentle_PUZ.png)                              |            |              |                                                                                                                         |
+| [Sudoku]              | ![](https://upload.wikimedia.org/wikipedia/commons/e/e0/Sudoku_Puzzle_by_L2G-20050714_standardized_layout.svg) |            |              |                                                                                                                         |
+| [Suguru]              | ![](https://upload.wikimedia.org/wikipedia/commons/7/75/Tectonic-1_WP.jpg)                                     | [2011][y1] | [👁️🗨️][z1] | Dodeka Sudoku, Jigsaw Sudoku, Polyomino, Nanba Burokku, Number Blocks, Tectonic                                         |
+| [Sujiko]              | ![](https://upload.wikimedia.org/wikipedia/commons/2/2f/Example_completed_Sujiko_Puzzle.png)                   |            |              |                                                                                                                         |
+| [Survo puzzle]        | ![][survo-image]                                                                                               |            |              |                                                                                                                         |
+| [Takuzu]              | ![](https://upload.wikimedia.org/wikipedia/commons/0/03/Takuzu_unsolved_grid.svg)                              | [2009][y2] | [👁️🗨️][z2] | Binairo, Binary Puzzle, Binero, Binoxxo, Eins und Zwei, One and Two, Sudoku Binary Tic-Tac-Logic, Tohu-Wa-Vohu, Zernero |
+| [Tatamibari]          | ![](https://upload.wikimedia.org/wikipedia/commons/a/a8/Tatamibari_puzzle.png)                                 |            |              |                                                                                                                         |
+| [WordSearch]          | ![](https://upload.wikimedia.org/wikipedia/commons/f/fa/Wordsearch.svg)                                        |            |              | Sopas de letras ("Soup of Letters"), Buchstabensalat (Alphabet Salad)                                                   |
+| [Yajilin]             | ![](https://upload.wikimedia.org/wikipedia/commons/5/5f/Yajilin_puzzle_%28vector%29.png)                       |            |              |                                                                                                                         |
+| [Yajisan-Kazusan]     | ![](https://upload.wikimedia.org/wikipedia/commons/e/e4/Yajisan_Kazusan_Puzzle.png)                            |            |              |                                                                                                                         |
+
+[y1]: https://www.puzzler.com/puzzles-a-z/suguru
+[y2]: https://en.wikipedia.org/wiki/Takuzu
+[y3]: https://en.wikipedia.org/wiki/KenKen
+[y4]: https://www.nikoli.co.jp/en/puzzles/akari.html
+[y5]: https://www.conceptispuzzles.com/index.aspx?uri=puzzle/kakuro/history
+
+[z1]: https://www.researchgate.net/publication/347134970_Physical_Zero-Knowledge_Proof_for_Suguru_Puzzle
+[z2]: https://www.researchgate.net/publication/303812002_Physical_Zero-Knowledge_Proofs_for_Akari_Takuzu_Kakuro_and_KenKen
+
+The year listed is the first timed the game is _known_ to have appeared.
+The actual year of invention and first publication _might_ be earlier.
+
+- 👁️🗨️ = Has [Zero Knowledge Proof][ZKP] paper
+
+[ZKP]: https://en.wikipedia.org/wiki/Zero-knowledge_proof
 
 [Atsumari]: https://en.wikipedia.org/wiki/Atsumari
 [Battleship]: https://en.wikipedia.org/wiki/Battleship_(puzzle)
 [Boggle]: https://en.wikipedia.org/wiki/Boggle
-[Buchstabensalat]: https://en.wikipedia.org/wiki/Buchstabensalat_(logic_puzzle)
-[Connect_the_dots]: https://en.wikipedia.org/wiki/Connect_the_dots
+[Connect the dots]: https://en.wikipedia.org/wiki/Connect_the_dots
 [Cross-figure]: https://en.wikipedia.org/wiki/Cross-figure
 [Crossword]: https://en.wikipedia.org/wiki/Crossword
 [Fill-In]: https://en.wikipedia.org/wiki/Fill-In_(puzzle)
 [Fillomino]: https://en.wikipedia.org/wiki/Fillomino
 [Futoshiki]: https://en.wikipedia.org/wiki/Futoshiki
-[Gokigen_Naname]: https://en.wikipedia.org/wiki/Gokigen_Naname
+[Gokigen Naname]: https://en.wikipedia.org/wiki/Gokigen_Naname
 [Hashiwokakero]: https://en.wikipedia.org/wiki/Hashiwokakero
 [Heyawake]: https://en.wikipedia.org/wiki/Heyawake
 [Hidato]: https://en.wikipedia.org/wiki/Hidato
 [Hitori]: https://en.wikipedia.org/wiki/Hitori
-[Hotaru_Beam]: https://en.wikipedia.org/wiki/Hotaru_Beam
-[Inshi_no_heya]: https://en.wikipedia.org/wiki/Inshi_no_heya
-[Join_Five]: https://en.wikipedia.org/wiki/Join_Five
+[Hotaru Beam]: https://en.wikipedia.org/wiki/Hotaru_Beam
+[Inshi no heya]: https://en.wikipedia.org/wiki/Inshi_no_heya
+[Join Five]: https://en.wikipedia.org/wiki/Join_Five
 [Kakuro]: https://en.wikipedia.org/wiki/Kakuro
 [Keisuke]: https://en.wikipedia.org/wiki/Keisuke_(puzzle)
 [KenKen]: https://en.wikipedia.org/wiki/KenKen
 [Kuromasu]: https://en.wikipedia.org/wiki/Kuromasu
-[Light_Up]: https://en.wikipedia.org/wiki/Light_Up_(puzzle)
+[Light Up]: https://en.wikipedia.org/wiki/Light_Up_(puzzle)
 [LITS]: https://en.wikipedia.org/wiki/LITS
-[Logic_maze]: https://en.wikipedia.org/wiki/Logic_maze
+[Logic maze]: https://en.wikipedia.org/wiki/Logic_maze
 [Mainarizumu]: https://en.wikipedia.org/wiki/Mainarizumu
 [Masyu]: https://en.wikipedia.org/wiki/Masyu
 [Maze]: https://en.wikipedia.org/wiki/Maze
@@ -90,22 +107,23 @@ The following games might be of interest to add, if a generator exist for them:
 [Nonogram]: https://en.wikipedia.org/wiki/Nonogram
 [Numberlink]: https://en.wikipedia.org/wiki/Numberlink
 [Nurikabe]: https://en.wikipedia.org/wiki/Nurikabe_(puzzle)
-[Picture_maze]: https://en.wikipedia.org/wiki/Picture_maze
-[Ripple_Effect]: https://en.wikipedia.org/wiki/Ripple_Effect_(puzzle)
+[Picture maze]: https://en.wikipedia.org/wiki/Picture_maze
+[Ripple Effect]: https://en.wikipedia.org/wiki/Ripple_Effect_(puzzle)
 [Shakashaka]: https://en.wikipedia.org/wiki/Shakashaka
 [Shikaku]: https://en.wikipedia.org/wiki/Shikaku
 [Shinro]: https://en.wikipedia.org/wiki/Shinro
 [Slitherlink]: https://en.wikipedia.org/wiki/Slitherlink
-[Spot_the_difference]: https://en.wikipedia.org/wiki/Spot_the_difference
-[Stained_Glass]: https://en.wikipedia.org/wiki/Stained_Glass_(puzzle)
+[Spot the difference]: https://en.wikipedia.org/wiki/Spot_the_difference
+[Stained Glass]: https://en.wikipedia.org/wiki/Stained_Glass_(puzzle)
 [Str8ts]: https://en.wikipedia.org/wiki/Str8ts
 [Sudoku]: https://en.wikipedia.org/wiki/Sudoku
+[Suguru]: https://en.wikipedia.org/wiki/Sudoku#Variants
 [Sujiko]: https://en.wikipedia.org/wiki/Sujiko
-[Survo_puzzle]: https://en.wikipedia.org/wiki/Survo_puzzle
+[Survo puzzle]: https://en.wikipedia.org/wiki/Survo_puzzle
 [Takuzu]: https://en.wikipedia.org/wiki/Takuzu
 [Tatamibari]: https://en.wikipedia.org/wiki/Tatamibari
-[Word_search]: https://en.wikipedia.org/wiki/Word_search
+[WordSearch]: https://en.wikipedia.org/wiki/Word_search
 [Yajilin]: https://en.wikipedia.org/wiki/Yajilin
 [Yajisan-Kazusan]: https://en.wikipedia.org/wiki/Yajisan-Kazusan
 
-[jplanson/takuzu-board-generator]: https://github.com/jplanson/takuzu-board-generator
+[survo-image]: data:image/png;base64,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
